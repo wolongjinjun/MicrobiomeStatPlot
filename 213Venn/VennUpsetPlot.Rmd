@@ -126,9 +126,9 @@ b Venn diagram based on genera. The two groups have 83 shared genera, with 3 uni
 
 #### 绘图实战
 
-我们在R语言环境下，使用RStudio进行绘图，主要使用VennDiagram和UpsetR包分别用于绘制维恩图和集合图。
+我们在R语言环境下，使用RStudio进行绘图，主要使用VennDiagram和UpSetR包分别用于绘制维恩图和集合图。
 
-##### VennDiagram和UpsetR的数据要求
+##### VennDiagram和UpSetR的数据要求
 
 值得注意的是，VennDiagram和UpsetR的数据要求并不相同，前者要求适用`list`输入以各组为集合的元素变量名,有几个分组就输入几个集合；而后者以元素变量名为行名，用数字0和1代表元素在分组集合中存在与否，数据输入是以数据框的形式输入。因此在数据准备和图形绘制过程中需要准备对应参数。
 
@@ -143,7 +143,7 @@ b Venn diagram based on genera. The two groups have 83 shared genera, with 3 uni
 | 5    | E    |      | E    |     
 | 6    | F    |      |      |     
 
- **UpsetR的数据类型** 
+ **UpSetR的数据类型** 
 
 | Var. | Set1 | Set2 | Set3 |
 | ---- | ---- | ---- | ---- |
@@ -247,7 +247,7 @@ dev.off()
 ![](http://210.75.224.110/github/MicrobiomeStatPlot/213Venn/p1.GenusVenn.png)
 
 
-##### 使用UpsetR绘制集合图
+##### 使用UpSetR绘制集合图
 
 为方便代码兼容R3.6和R4.0版本，再进行一次数据处理
 
